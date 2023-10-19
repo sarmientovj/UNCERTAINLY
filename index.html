@@ -1,0 +1,144 @@
+<!-- https://www.youtube.com/watch?v=VsAuUrtu9yM&t=76s
+     https://drv.tw/
+     https://tinyurl.com/
+
+     https://tinyurl.com/incert
+     https://orc3ur1zzbitm6nzl00oyq-on.drv.tw/WEB/uncertainty/
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+    <div class="header">UNCERTAINTY OF MEASUREMENT</div>
+    <!-- <h2>UNCERTAINTY OF MEASUREMENT</h2> -->
+
+    <div id="list_in" class="row"></div>
+
+    <form id="frm1">
+        <table>
+            <tr>
+                <td class="td1"><b>H1 :</b></td>
+                <td><input type="number" name="fname" value="18.80"></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="td1"><b>D1 :</b></td>
+                <td><input type="number" name="fname" value="14.20"></td>
+            </tr>
+            <tr>
+                <td class="td1"><b>H2 :</b></td>
+                <td><input type="number" name="fname" value="18.75"></td>
+                <td></td>
+                <td class="td1"><b>D2 :</b></td>
+                <td><input type="number" name="fname" value="14.50"></td>
+            </tr>
+            <tr>
+                <td class="td1"><b>H3 :</b></td>
+                <td><input type="number" name="fname" value="18.60"></td>
+                <td></td>
+                <td class="td1"><b>D3 :</b></td>
+                <td><input type="number" name="fname" value="14.40"></td>
+            </tr>
+            <tr>
+                <td class="td1"><b>H4 :</b></td>
+                <td><input type="number" name="fname" value=""></td>
+                <td></td>
+                <td class="td1"><b>D4 :</b></td>
+                <td><input type="number" name="fname" value=""></td>
+            </tr>
+        </table>
+    </form><br>
+
+    <table>
+        <tr>
+            <td class="td1">Uncertainty Reading&nbsp;&nbsp;</td>
+            <td><input id="uncRead" type="number" name="fname" value="0.03"></td>
+        </tr>
+    </table><br>
+
+    <button type="button" onclick="calculateStatistics()">Calculate the Statistics</button>
+    <br><br>
+    <div colspan='4' valign="top" style="text-align:left; color: lightblue; font-size: 27px;">
+            Valentin Sarmiento - sarmiento.vj@pucp.edu.pe
+    </div><br>
+
+    <div id="Statistics" style="display: none">
+        <table class="solid">
+            <tr>
+                <td></td>
+                <th>Statistics H</th>
+                <th>Statistics D</th>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Average</td>
+                <td><label id="Average_X"></label></td>
+                <td><label id="Average_Y"></label></td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Standard Deviation</td>
+                <td><label id="Standard_Deviation_X"></label></td>
+                <td><label id="Standard_Deviation_Y"></label></td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Standard Uncertainty&nbsp;</td>
+                <td><label id="Standard_Uncertainty_X"></label></td>
+                <td><label id="Standard_Uncertainty_Y"></label></td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Uncertainty Reading</td>
+                <td><label id="Uncertainty_Reading_X"></label></td>
+                <td><label id="Uncertainty_Reading_Y"></label></td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Total Uncertainty</td>
+                <td><label id="Total_Uncertainty_X"></label></td>
+                <td><label id="Total_Uncertainty_Y"></label></td>
+            </tr>
+        </table>
+
+
+        <table class="solid">
+            <tr>
+                <th>Volumen</th>
+                <th>Uncertainty V.</th>
+            </tr>
+            <tr>
+                <td><label id="Volumen"></label></td>
+                <td><label id="V_Uncertainty"></label></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <table class="solid">
+            <tr class="tr1">
+                <th>Theta Average</th>
+                <th>Uncertainty Theta</th>
+            </tr>
+            <tr class="tr1">
+                <td><label id="Theta_Average"></label></td>
+                <td><label id="Theta_Uncertainty"></label></td>
+            </tr>
+            <!-- <tr class="tr1"><td>&nbsp;</td><td></td></tr> -->
+            <tr class="tr1">
+                <th>Ue (static friction<br>coefficient)</th>
+                <th>Uncertainty Ue.</th>
+            </tr>
+            <tr class="tr1">
+                <td><label id="Ue"></label></td>
+                <td><label id="Ue_Uncertainty"></label></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <p id="demo"></p>
+
+    <script src="myscripts.js"></script>
+
+</body>
+</html>

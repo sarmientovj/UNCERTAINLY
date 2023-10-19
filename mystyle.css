@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(43,43,43);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+input[type="number"] {
+    font-size: 25px;
+    background-color: #ffffe7;
+    padding: 3px 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+    width: 8ch;
+}
+
+button {
+    font-size: 25px;
+    background-color: #c9ffc9; /* Green */
+    border: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: rgb(43,43,43);
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+div.header {
+    font-size: 28px;
+    font-weight: 900;
+    width: 35ch;
+    color: rgb(43,43,43);
+    background-color: lightblue;
+    margin: 0px 0px 10px 0px;
+    /*margin-bottom: 20px*/;
+    padding: 10px 20px;
+}
+
+h2 {
+    color: rgb(43,43,43);
+    border-collapse: collapse;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightblue;
+    margin: 0px 0px 20px 0px;
+    width: 32ch;
+}
+
+th {
+    color: lightblue;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 15px;
+}
+
+/*tr:nth-child(even){background-color: #F2f2f2}*/
+td {
+    color: #ffffe7;
+    text-align: left;
+}
+
+.td1 {
+    color: lightblue;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    padding-right: 40px;
+    padding-left: 15px;
+}
+
+table.solid {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #c9ffc9;
+}
+
+tr.tr1 {
+    border: 1px solid red;
+    border-color: #c9ffc9;
+}
